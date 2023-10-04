@@ -1,86 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
- 
-  <link rel="stylesheet" href="/assets/css/style.scss">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+
   <main>
-    <section class="resume">
-      <h1>Your Result</h1>
-      <div>
-        <p>
-          <span>76</span>
-          of 100
-        </p>
+    <div class="container">
+      <section class="container-left">
+
+        Your Result
+        76
+        of 100
+        
+        Great
+        You scored higher than 65% of the people who have taken these tests.
       </div>
-    
-      <div>
-        <h2>Great</h2>
-        <p>
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
+      <section class="right-container">
+
+        <h2>
+          Summary
+        </h2>
+        
+        <div class="pill react">
+          Reaction
+          80 / 100
+        </div>
+        
+        <div class="pill memo">
+          Memory
+          92 / 100
+        </div>
+        
+        <div class="pill verb">
+          Verbal
+          61 / 100
+        </div>  
+        
+        <div class="pill visu">
+          Visual
+          72 / 100
+        </div>
+          
+        <button type="submit">
+          Continue
+        </button>
       </div>
-    </section>
-    
-    <section class="details">
-      <h2>
-        Summary
-      </h2>
-      <ul>
-        <li>
-          <h3>
-            Reaction
-          </h3>
-          <p>
-            <span>80</span> / 100
-          </p>
-        </li>
-        <li>
-          <h3>
-            Memory
-          </h3>
-          <p>
-            <span>92</span> / 100
-          </p>
-        </li>
-        <li>
-          <h3>
-            Verbal
-          </h3>
-          <p>
-            <span>61</span> / 100
-          </p>
-        </li>
-        <li>
-          <h3>
-            Visual
-          </h3>
-          <p>
-            <span>72</span> / 100
-          </p>
-        </li>
-      </ul>
-  
-      <button>Continue</button>
-    </section>
+    </div>
   </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Valentin Jardot</a>.
+    Coded by <a href="http://valentinjardot.com/">Valentin Jardot</a>.
   </div>
 </body>
 </html>

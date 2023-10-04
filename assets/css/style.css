@@ -1,0 +1,90 @@
+/* INCLUDE FONTS */
+/* Variante Medium */
+@font-face {
+    font-family: '';
+    src: url('/assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+    font-weight: 300; /* Poids light voir pour le poids medium */
+    font-style: normal; /* Style normal */
+}
+/* Variante Regular (par défaut) */
+@font-face {
+    font-family: 'HanlenGrotesk';
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal; /* Poids normal (par défaut) */
+    font-style: normal; /* Style normal */
+}
+/* Variante Bold */
+@font-face {
+    font-family: 'HanlenGrotesk';
+    src: url('/assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold; /* Poids bold */
+    font-style: normal; /* Style normal */
+}
+/* Variante ExtraBold */
+@font-face {
+    font-family: 'HanlenGrotesk';
+    src: url('/assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold; /* Poids bold */
+    font-style: normal; /* Style normal */
+}
+
+/* --- GLOBAL ---*/
+ 
+body {
+    font-family: 'HanlenGrotesk', sans-serif;
+    text-align: center;
+    background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    min-width: auto;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* --- RESULTS COMPONENT --- */
+
+/* global component */
+
+.container {
+}
+
+.container-left {
+
+}
+
+.container-right {
+}
+
+.pill {
+
+}
+
+button {
+
+}
+
+/* responsive laptop */
+
+@media screen and (min-width: 375px) {
+    .container {
+    }
+}
+
+/* responsive mobile */
+
+@media screen and (max-width: 375px) {
+    .container {
+    }
+
+}
