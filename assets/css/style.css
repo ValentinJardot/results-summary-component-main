@@ -40,6 +40,8 @@ body {
 main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: content;
     height: 100vh;
     min-width: auto;
 }
@@ -54,14 +56,27 @@ main {
 
 /* --- RESULTS COMPONENT --- */
 
-/* global component */
+/* left component */
 
 .container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+    border-radius: 3vh;
 }
 
 .container-left {
-
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 3vh;
 }
+
+.container-left-score {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    
+}
+
+/* right component */
 
 .container-right {
 }
