@@ -54,39 +54,122 @@ main {
     color: hsl(228, 45%, 44%);
 }
 
-/* --- RESULTS COMPONENT --- */
-
-/* left component */
-
 .container {
     background-color: hsl(0, 0%, 100%);
     display: flex;
     justify-content: center;
-    width: 100vh;
+    width: auto;
     border-radius: 3vh;
 }
+
+/* --- RESULTS COMPONENT --- */
+
+/* left component */
 
 .container-left {
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 3vh;
+    color: hsl(0, 0%, 100%);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-left-score {
     background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-left-result {
+    opacity: 75%;
+}
+
+.container-left-score span {
+    font-size: xxx-large;
+}
+
+.container-left-evaluation {
+    font-size: x-large;
+}
+
+.container-left-summary {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 30vh;
+    max-width: fit-content;
+
 }
 
 /* right component */
 
 .container-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pills {
+
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.10);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.10);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.10);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.10);
+    color: hsl(234, 85%, 45%);
 }
 
 .pill {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 1vh;
 }
 
 button {
+    /* width: 70%; */
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    padding: 0.8rem 5rem;
+    border-radius: 3vh;
+    border: 0;
+    margin: 1rem 2rem;
 
+}
+
+.pill p {
+    font-weight: lighter;
+}
+
+.pill p span {
+    font-weight: bold;
 }
 
 /* responsive laptop */
@@ -100,6 +183,16 @@ button {
 
 @media screen and (max-width: 375px) {
     .container {
+        flex-direction: column;
     }
-
+    .container-left {
+        width: 100%;
+        border-radius: 0vh 0vh 3vh 3vh;
+    }
+    .container-right {
+        width: 100%;
+    }
+    .container-left-result {
+        margin-top: 5rem;
+    }
 }
