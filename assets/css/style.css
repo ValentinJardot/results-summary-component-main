@@ -182,6 +182,9 @@ button {
 /* responsive mobile */
 
 @media screen and (max-width: 375px) {
+    main {
+        height: auto;
+    }
     .container {
         flex-direction: column;
     }
